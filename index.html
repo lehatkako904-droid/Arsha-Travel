@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsha Travel - گەشتیاری ئارشا</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            direction: rtl;
+        }
+
+        /* Header */
+        header {
+            background-color: #0b1f4b; /* ڕەنگی شینی تۆخ وەک لۆگۆکە */
+            color: white;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700; /* زێڕین */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('bg.jpg'); /* باگراوندی شوێنی گەشتیاری */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #0b1f4b;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
+
+        /* Services Section */
+        .section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #0b1f4b;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-top: 4px solid #0b1f4b;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        /* Countries Section */
+        .countries-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .country-badge {
+            background-color: #0b1f4b;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #0b1f4b;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 { color: #ffd700; }
+
+        .contact-info {
+            font-size: 1.3em;
+            line-height: 2.5;
+        }
+
+        footer {
+            background-color: #111;
+            color: #aaa;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- لۆگۆکەت لێرە دابنێ بە ناوی logo.png -->
+            <img src="logo.png" alt="Arsha Travel Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#">سەرەکی</a>
+            <a href="#services">خزمەتگوزارییەکان</a>
+            <a href="#countries">وڵاتەکان</a>
+            <a href="#contact">پەیوەندی</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>مامەڵەی ڤیزای شنگن بە ئێمە بسپێرە</h1>
+            <p>ئێمە بەشێوەی یاسایی ئامادەکاری ڤیزاکەت بۆ جێبەجێ دەکەین</p>
+            <a href="#contact" class="btn">پەیوەندی بکە</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>خزمەتگوزارییەکانمان</h2>
+        <div class="services-grid">
+            <div class="service-card">✅ وادەی چاوپێکەوتن</div>
+            <div class="service-card">✅ وەرگێرانی یاسایی</div>
+            <div class="service-card">✅ تکتی فڕۆکە</div>
+            <div class="service-card">✅ پڕکردنەوەی فۆرم</div>
+            <div class="service-card">✅ دڵنیایی تەندروستی</div>
+            <div class="service-card">✅ حجزکردنی هۆتێل</div>
+        </div>
+    </section>
+
+    <section id="countries" class="section" style="background-color: #fff;">
+        <h2>وڵاتەکانی ڤیزای شنگن</h2>
+        <div class="countries-list">
+            <div class="country-badge">ئەڵمانیا</div>
+            <div class="country-badge">فەرەنسا</div>
+            <div class="country-badge">چیک</div>
+            <div class="country-badge">هەنگاریا</div>
+            <div class="country-badge">یۆنان</div>
+            <div class="country-badge">سوید</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>پەیوەندیمان پێوە بکەن</h2>
+        <div class="contact-info">
+            <p>📍 ناونیشان: هەولێر - برایەتی</p>
+            <p>☎️ 07504655095</p>
+            <p>☎️ 07501484868</p>
+            <p>📧 arshatravell@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arsha Travel. هەموو مافەکان پارێزراون.</p>
+    </footer>
+
+</body>
+</html>
