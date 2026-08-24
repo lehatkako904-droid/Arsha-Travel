@@ -14,9 +14,8 @@
             direction: rtl;
         }
 
-        /* Header */
         header {
-            background-color: #0b1f4b; /* ڕەنگی شینی تۆخ وەک لۆگۆکە */
+            background-color: #0b1f4b;
             color: white;
             padding: 15px 0;
             display: flex;
@@ -26,10 +25,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
-        .logo img {
-            height: 60px;
-            width: auto;
-        }
+        .logo img { height: 60px; width: auto; }
 
         .nav-links a {
             color: white;
@@ -38,13 +34,10 @@
             font-weight: bold;
         }
 
-        .nav-links a:hover {
-            color: #ffd700; /* زێڕین */
-        }
+        .nav-links a:hover { color: #ffd700; }
 
-        /* Hero Section */
         .hero {
-            background-image: url('bg.jpg'); /* باگراوندی شوێنی گەشتیاری */
+            background-image: url('bg.jpg');
             background-size: cover;
             background-position: center;
             height: 600px;
@@ -63,16 +56,8 @@
             max-width: 800px;
         }
 
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            color: #ffd700;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            line-height: 1.8;
-        }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; color: #ffd700; }
+        .hero p { font-size: 1.2em; line-height: 1.8; }
 
         .btn {
             display: inline-block;
@@ -87,21 +72,10 @@
             transition: 0.3s;
         }
 
-        .btn:hover {
-            background-color: #fff;
-        }
+        .btn:hover { background-color: #fff; }
 
-        /* Services Section */
-        .section {
-            padding: 60px 50px;
-            text-align: center;
-        }
-
-        .section h2 {
-            color: #0b1f4b;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
+        .section { padding: 60px 50px; text-align: center; }
+        .section h2 { color: #0b1f4b; font-size: 2.5em; margin-bottom: 40px; }
 
         .services-grid {
             display: grid;
@@ -119,12 +93,6 @@
             font-weight: bold;
         }
 
-        .service-card:hover {
-            transform: translateY(-5px);
-            transition: 0.3s;
-        }
-
-        /* Countries Section */
         .countries-list {
             display: flex;
             flex-wrap: wrap;
@@ -141,19 +109,63 @@
             font-weight: bold;
         }
 
-        /* Contact Section */
+        /* بەشی نوێی سەرکەوتنەکان */
+        .success-section {
+            background: linear-gradient(135deg, #0b1f4b 0%, #1e3a8a 100%);
+            color: white;
+            border: 3px solid #ffd700;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .success-section h3 {
+            color: #ffd700;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .success-section p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* ئایکۆنی کلیککردن بۆ وێنەکە */
+        .visa-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #ffd700;
+            color: #0b1f4b;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.4em;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .visa-btn:hover {
+            background-color: white;
+            transform: scale(1.05);
+        }
+
+        .icon-style {
+            font-size: 1.5em;
+        }
+
         .contact {
             background-color: #0b1f4b;
             color: white;
             text-align: center;
         }
-
         .contact h2 { color: #ffd700; }
-
-        .contact-info {
-            font-size: 1.3em;
-            line-height: 2.5;
-        }
+        .contact-info { font-size: 1.3em; line-height: 2.5; }
 
         footer {
             background-color: #111;
@@ -167,13 +179,13 @@
 
     <header>
         <div class="logo">
-            <!-- لۆگۆکەت لێرە دابنێ بە ناوی logo.png -->
             <img src="logo.png" alt="Arsha Travel Logo">
         </div>
         <nav class="nav-links">
             <a href="#">سەرەکی</a>
             <a href="#services">خزمەتگوزارییەکان</a>
             <a href="#countries">وڵاتەکان</a>
+            <a href="#success">سەرکەوتنەکان</a>
             <a href="#contact">پەیوەندی</a>
         </nav>
     </header>
@@ -207,6 +219,23 @@
             <div class="country-badge">هەنگاریا</div>
             <div class="country-badge">یۆنان</div>
             <div class="country-badge">سوید</div>
+        </div>
+    </section>
+
+    <!-- بەشی نوێی سەرکەوتن و ئایکۆن -->
+    <section id="success" class="section">
+        <h2>بەڵگە و سەرکەوتنەکان</h2>
+        
+        <div class="success-section">
+            <h3>هیچ شتێک مەحاڵ نیە لەگەڵ ئێمە</h3>
+            <p>ئەم برایە پێشتر ڤیزای نەبووە و تەنیا چوار سەفەری ئێران لەسەر پاسەپۆرتەکەی بوو. بەڵام بە ئامادەکاری و وردبینی کارمەندانمان، ڤیزای ئەڵمانیای بەدەستهێنا.</p>
+            
+            <a href="visa.jpg" target="_blank" class="visa-btn" title="بۆ بینینی وێنەی ڤیزاکە کلیک بکە">
+                <span class="icon-style">🔍</span> 
+                کلیک بکە بۆ بینینی ڤیزا
+                <span class="icon-style">📸</span>
+            </a>
+            <p style="font-size: 0.9em; margin-top: 15px; color: #ccc;">(بە کلیککردن لەسەر ئەم ئایکۆنە، وێنەی ڤیزاکە دەکرێتەوە)</p>
         </div>
     </section>
 
